@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>temperature for today</title>
+</head>
+<body>
+<h1>
+  Good morning! The temperature today is
+  <span th:style="'color:' + ${color}"
+        th:text="${temperature}"></span>degrees Celsius!</h1>
+</body>
+</html>
